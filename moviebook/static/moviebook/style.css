@@ -1,0 +1,626 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; 
+    scroll-behavior: smooth;}
+*, :after, :before { box-sizing: inherit; }
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+    padding:0px;
+    margin:0px;
+    text-align: center;
+    color:black;
+    background-color: #f2f2e9;
+    }
+
+.kontejner{
+    margin:0px;
+    padding:0px;
+}
+
+.uvod{
+    background-image: linear-gradient(#79baf2,#394009);
+}
+
+.logo{
+    width:100%;
+    margin:0;
+    padding: 0;
+    display:inline-block;
+    position:fixed;
+    top:0;
+    left:0;
+    box-shadow: 2px 2px 20px black;
+}
+
+.jeotevreno{
+    padding-top:210px;
+    padding-bottom:0px;
+    font-size:20px;
+    color:white; 
+}
+
+.shrnuti_levo{
+    padding-bottom: 30px;
+}
+
+.sipka{
+    width:20%;
+    position: fixed;
+    bottom:5%;
+    right:5%;
+    display:inline-block;
+}
+
+.odkazy{
+    color:#394009;
+    margin-top:5px;
+    padding-top:20px;
+    border-top: 4px dotted #394009;
+    border-bottom: 4px dotted #394009;
+}
+
+.odkazy ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+
+.odkazy li{
+    display:block;
+}
+
+.odkazy a{
+    display:inline-block;
+    color:white;
+    padding:10px 20px;
+    margin-bottom:20px;
+    background-color:#394009;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color:#79baf2;
+    color:black;
+}
+.pozadi{
+    margin:0px;
+    padding:0px;
+}
+
+/* Přechod */
+.prechod_obrazek{
+    width: 85%;
+}
+
+/* Aktuálně */
+.aktualne{
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+    }
+
+.aktualne img{
+    width: 150px;
+}
+
+.nadpis_aktualne{
+    font-family: 'Lato', sans-serif;
+    color:red;
+    font-weight: bold;
+}
+
+.text_aktualne{
+    text-align: justify;
+}
+
+/* Historie hradu */
+.historie{
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+
+.historie img{
+    width: 150px;
+}
+
+.nadpis_historie{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color:red;
+}
+
+.text_historie{
+    text-align: justify;
+    color:black;
+}
+
+/* Nabídka prohlídek */
+.prohlidky{
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+
+.prohlidky img{
+    width: 150px;
+}
+
+.nadpis_prohlidky{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color:red;
+}
+
+.text_prohlidky{
+    text-align: justify;
+    color:black;
+}
+
+/* Ceník */
+.cenik{
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+
+.cenik img{
+    width: 150px;
+}
+
+.nadpis_cenik{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color:red;
+}
+
+.text_cenik{
+    text-align: justify;
+    color:black;
+}
+
+/* Otevírací doba */
+.otevreni{
+    padding: 20px 0px;
+    border-bottom: 4px dotted #394009;
+}
+
+.nadpis_otevreni{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color:red;
+}
+
+.rtable{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.rtable th,
+.rtable td {
+  padding: 6px 12px;
+  border: 1px solid #d9d7ce;
+}
+
+/* kontakt */
+.kontakt{
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+
+.kontakt img{
+    width: 150px;
+}
+
+.nadpis_kontakt{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color:red;
+}
+
+.text_kontakt{
+    text-align: justify;
+    color:black;
+}
+
+.zápatí{
+    color:white;
+    text-align: center;
+    background-color: #393a40;
+    padding:10px;
+}
+
+.ruka{
+    width:10%;
+}
+
+@media screen and (min-width:540px){
+.uvod{
+    display: flex;
+    justify-content: space-between;
+    position:static;
+}
+    
+.logo1{
+    flex: 0 1 70%;
+    margin:0;
+    padding:0;
+    top:0;
+    left:0;
+    display: inline-block;
+}
+
+.logo{
+    width: 100%;
+    margin:0;
+    padding:0;
+    position:static;
+    opacity:0.8;
+}
+    
+.sipka{
+    width:70px;
+}
+
+.jeotevreno{
+    flex: 0 1 33.3333%;
+    padding-top: 10px;
+}
+
+.shrnuti_levo{
+    flex: 0 1 33.3333%;
+}
+
+.odkazy{
+    display:flex;
+    justify-content: space-around;
+    color:#394009;
+    margin:0;
+    padding-top:15px;
+    border-top: 4px dotted #394009;
+    border-bottom: 4px dotted #394009;
+    position: static;
+    bottom:50%;
+    right:10%;
+}
+    
+.odkazy ul{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+    
+.odkazy li{
+    flex:0 1 auto;
+    display: inline-block;
+}
+    
+.odkazy a{
+    display:inline-block;
+    color:white;
+    padding:10px 15px;
+    margin-bottom:20px;
+    background-color:#394009;
+    border-radius:0px;
+    text-decoration: none;
+    font-size: 11.5px;
+}
+    
+a:hover{
+    background-color:#79baf2;
+    color:black;
+} 
+
+.pozadi{
+    margin:0px;
+    padding:0px;
+}
+    
+/* Přechod */
+.prechod{
+    display:inline-block;
+    width: 20%;
+}
+
+.prechod_obrazek{
+    width: 85%;
+}
+    
+/* Aktuálně */
+.aktualne{
+    display:flex;
+    flex-direction: column;
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+    
+.aktualita1{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+    
+.obrazek_aktualne{
+    flex:0 1 40%;
+    padding:5% 5%;
+    display:inline-block;
+}
+    
+.text_aktualne{
+    flex:0 1 60%;
+    padding:5% 5%;
+}
+
+.aktualita2{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+
+.aktualita3{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+      
+/* Historie hradu */
+.historie{
+    display:flex;
+    flex-direction: column;
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+    
+.historie1{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+    
+.obrazek_historie{
+    flex:0 1 40%;
+    padding:5% 5%;
+    display:inline-block;
+}
+    
+.text_historie{
+    flex:0 1 60%;
+    padding:5% 5%;
+}
+
+.historie2{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+
+.historie3{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+    
+/* Nabídka prohlídek */
+.prohlidky{
+    display:flex;
+    flex-direction: column;
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+    
+.prohlidky1{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+    
+.obrazek_prohlidky{
+    flex:0 1 40%;
+    padding:5% 5%;
+    display:inline-block;
+}
+    
+.text_prohlidky{
+    flex:0 1 60%;
+    padding:5% 5%;
+}
+
+.prohlidky2{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+
+.prohlidky3{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+    
+/* Ceník */
+.cenik{
+    display:flex;
+    flex-direction: column;
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+    
+.cenik1{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+    
+.obrazek_cenik{
+    flex:0 1 40%;
+    padding:5% 5%;
+    display:inline-block;
+}
+    
+.text_cenik{
+    flex:0 1 60%;
+    padding:5% 5%;
+}
+
+.cenik2{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+
+.cenik3{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+    
+/* Otevírací doba */
+.otevreni{
+    display:block;
+    padding-bottom: 20px;
+}   
+    
+
+/* kontakt */
+.kontekt{
+    display:flex;
+    flex-direction: column;
+    padding-top: 20px;
+    border-bottom: 4px dotted #394009;
+}
+    
+.kontakt1{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+    
+.obrazek_kontakt{
+    flex:0 1 40%;
+    padding:5% 5%;
+    display:inline-block;
+}
+    
+.text_kontakt{
+    flex:0 1 60%;
+    padding:5% 5%;
+}
+
+.kontakt2{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+} 
+
+.kontakt3{
+    display:flex;
+    flex:0 1 100%;
+    align-items: center;
+}
+}
+
+@media screen and (min-width:980px){
+
+.logo1{          
+    flex: 0 1 30%;     
+}
+
+.jeotevreno{
+    flex: 0 1 33.333%;
+}
+
+.shrnuti_levo{
+    flex: 0 1 33.333%;
+}
+        
+/* Aktuálně */
+.aktualne{
+    flex-direction: row;
+}
+        
+.aktualita1{
+    flex-direction: column;
+}
+        
+.aktualita2{
+    flex-direction: column;
+}
+
+.aktualita3{
+    flex-direction: column;
+}
+        
+/* Historie hradu */
+.historie{
+    flex-direction: row;
+}
+        
+.historie1{
+    flex-direction: column;
+}
+        
+.historie2{
+    flex-direction: column;
+}
+
+.historie3{
+    flex-direction: column;
+}
+        
+/* Nabídka prohlídek */
+.prohlidky{
+    flex-direction: row;
+}
+        
+.prohlidky1{
+    flex-direction: column;
+}
+        
+.prohlidky2{
+    flex-direction: column;
+}
+
+.prohlidky3{
+    flex-direction: column;
+}
+
+/* Ceník */
+.cenik{
+    flex-direction: row;
+}
+        
+.cenik1{
+    flex-direction: column;
+}
+        
+.cenik2{
+    flex-direction: column;
+}
+
+.cenik3{
+    flex-direction: column;
+}
+
+/* Otevírací doba */
+
+/* kontakt */
+.kontakt{
+    flex-direction: row;
+}
+        
+.kontakt1{
+    flex-direction: column;
+}
+        
+.kontakt2{
+    flex-direction: column;
+}
+
+.kontakt3{
+    flex-direction: column;
+} 
+}
